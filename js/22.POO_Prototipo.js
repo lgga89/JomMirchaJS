@@ -4,10 +4,10 @@
 CLASES: modelo a seguir.
 OBJETOS:es una instancia de una clase(una copia de ese modelo(clases)).
     
-    Atributos:Es una caracteristica o propiedad del Objeto
+    -Atributos:Es una caracteristica o propiedad del Objeto
     (son variables dentro de un objeto ).
 
-    Métodos: son las accciones que un objeto puede realizar
+    -Métodos: son las accciones que un objeto puede realizar
     (son funciones dentro de un objeto).
 */
 
@@ -16,9 +16,11 @@ PROTOTIPO:
 mecanismo por el cual un objeto puede heredar de un
 objeto padre, atributos y metodos(funciones).
 */
+
 //objeto literal
 console.log("OBJETO LITERAL");
 console.log("===============");
+
 const animal = {
   nombre: "Snoopy",
   sonar() {
@@ -85,7 +87,7 @@ Animal2.prototype.sonar = function () {
 Animal2.prototype.saludar = function () {
   return console.log(`Hola me llamo ${this.nombre}`);
 };
-
+//instancia
 const snoopy2 = new Animal2("Snoopy", "Macho");
 const lola2 = new Animal2("Lola Bunny", "Hembra");
 

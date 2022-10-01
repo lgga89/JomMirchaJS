@@ -7,17 +7,17 @@ function suma(a, b, ...c) {
   });
   return resultado;
 }
-console.log(suma(1, 2));
-console.log(suma(1, 2, 3));
-console.log(suma(1, 2, 3, 4));
-console.log(suma(1, 2, 3, 4, 5));
+console.log(suma(1, 2)); //3
+console.log(suma(1, 2, 3)); //6
+console.log(suma(1, 2, 3, 4)); //10
+console.log(suma(1, 2, 3, 4, 5)); //15
 
 //OPERADOR SPREAD
 
-array1 = [1, 2, 3, 4, 5];
-array2 = [6, 7, 8, 9, 0];
+let array1 = [1, 2, 3, 4, 5];
+let array2 = [6, 7, 8, 9, 0];
 
-array3 = array1 + array2;
+array3 = [...array1, ...array2];
 
-console.log(array1, array2);
-console.log(...array1, ...array2);
+console.log(array1, array2); // [ 1, 2, 3, 4, 5 ] [ 6, 7, 8, 9, 0 ]
+console.log(array3); //1 2 3 4 5 6 7 8 9 0

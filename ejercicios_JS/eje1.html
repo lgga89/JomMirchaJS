@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 01</title>
+</head>
+
+<body>
+    <script>
+        /*
+        solicita un nombre, la edad, muestra por pantalla el mensaje
+        "Hola _____, tienes______ años y el año que viene tendras
+        ____años"
+        realiza el ejercicio con prompt(mensaje) y haz uso de los 
+        template strings
+                        */
+
+        let nombre = prompt("INGRESE NOMBRE");
+        let edad = parseInt(prompt("INGRESE SU EDAD"));
+
+        document.write(`"Hola ${nombre}, tienes ${edad} años y el año que viene tendras
+        ${edad + 1} años`);
+
+    </script>
+</body>
+
+</html>

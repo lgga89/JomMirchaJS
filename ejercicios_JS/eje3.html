@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 03</title>
+</head>
+
+<body>
+    <script>
+        /*
+        solicita un numero e imprime todos los numeros pares e impares
+        desde 1 hasta ese numero con el mensaje "es par" o "es impar"
+        si el numero es 5 el resultado sera: 
+        1   - es impar
+        2   - es par
+        3   - es impar
+        4   - es par
+        5   - es impar          
+        */
+        let num = parseInt(prompt("INTRODUCE UN NUMERO"));
+
+        for (let i = 1; i <= 5; i++) {
+            /*
+               if (i % 2 == 0) {
+                   document.write(`${i} - es par </br>`)
+               }
+               else {
+                   document.write(`${i} - es impar </br>`)
+               }
+           }*/
+            i % 2 == 0 ? document.write(`${i} - es par </br>`) : document.write(`${i} - es impar </br>`);
+        }
+
+
+    </script>
+</body>
+
+</html>

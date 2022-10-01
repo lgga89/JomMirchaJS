@@ -1,5 +1,4 @@
-//FUNCIONES EXPRESADAS: cuando le asignas a una variable el valor
-//de una funcion
+/*FUNCIONES EXPRESADAS: cuando le asignas a una variable el valor de una funcion*/
 const saludo = function () {
   console.log(`HOLA 01`);
 };
@@ -46,3 +45,17 @@ console.log("-------ARROW---------------------");
 numeros.forEach((el, index) =>
   console.log(`${el} esta en la posicion ${index}`)
 );
+
+const perro = {
+  nombre: "gugu",
+  ladrar: function () {
+    console.log(this);
+  },
+  perrito() {
+    console.log(this);
+  },
+};
+
+console.log(perro);
+perro.ladrar();
+perro.perrito();

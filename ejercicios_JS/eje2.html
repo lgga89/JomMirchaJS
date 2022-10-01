@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIOS 02</title>
+</head>
+
+<body>
+    <script>
+
+        /*
+        Escribir un programa que pueda calcular el area de 3 figuras geometricas
+        triangulo, rectangulo y circular. 
+        En primer lugar pregunta de que figura se quiere
+        calcular el area, despues solicita los datos que necesites para calcularlo
+        
+            triangulo = b *a/2
+            rectangulo = b*a
+            circulo = π * r2 (pi * radio al cuadrado)
+        */
+
+        let figura = prompt("ingrese la figura geometrica");
+
+        // saber los valores si es triangulo , rectangulo y circulo
+        let base;
+        let alto;
+        let radio;
+        // vamos a comprobar figura
+        switch (figura) {
+            case "triangulo":
+                base = prompt("introduce la base del triangulo");
+                alto = prompt("introduce la altura del triangulo");
+                document.write(`El area del triangulo es ${(base * alto) / 2}`)
+                break;
+
+            case " rectangulo":
+                base = prompt("introduce la base del Rectangulo");
+                alto = prompt("introduce la altura del Rectangulo");
+                document.write(`El area del rectangulo es ${(base * alto)}`)
+                break;
+
+            case "circulo":
+                radio = prompt("introduce el radio del circulo");
+                document.write(`El area del circulo es ${(Math.PI * Math.pow(radio, 2))}`)
+                break;
+            default:
+                alert("no es valida la opcion que ingreso")
+        }
+    </script>
+</body>
+
+</html>
